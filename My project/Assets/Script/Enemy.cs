@@ -1,23 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using static UnityEngine.GraphicsBuffer;
 
 public class Enemy : MonoBehaviour
 {
     Transform target = null;
-    float enemyMoveSpeed = 5f;
+    float enemyMoveSpeed = 0.1f;
+    NavMeshAgent agent;
+
+    void Start()
+    {
+        agent = this.GetComponent<NavMeshAgent>();
+        agent.SetDestination(target.transform.position);
+    }
 
     void Update()
     {
         if (target != null)
         {
-            Vector3 dir = target.position - transform.position;
-            transform.Translate(dir.normalized * enemyMoveSpeed * Time.deltaTime);
+            agent.SetDestination(target.position);
         }
     }
 
-    private void OnTriggerEnter(Collider col)
+    private void OnTriggerStay(Collider col)
     {
         if (col.tag == "Player")
         {
