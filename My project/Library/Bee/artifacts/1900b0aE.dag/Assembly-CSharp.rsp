@@ -108,6 +108,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_INPUT_SYSTEM
+-define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
@@ -318,9 +319,10 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.30f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Transactions.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.30f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.30f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
--r:"C:/Users/yjl18/OneDrive/바탕 화면/My project/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"C:/Users/yjl18/OneDrive/바탕 화면/My project/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"C:/Users/yjl18/OneDrive/바탕 화면/MYGAME/My project/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"C:/Users/yjl18/OneDrive/바탕 화면/MYGAME/My project/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PPv2URPConverters.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
@@ -382,9 +384,23 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.SpatialTracking.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
+"Assets/AgedRiverBoat/Scripts/BouyancySimple.cs"
+"Assets/AgedRiverBoat/Scripts/MouseOrbitImproved.cs"
 "Assets/Reversed Interactive/The Portal Collection/Scripts/SimpleCameraControllerPortals.cs"
+"Assets/Scene Teleportation Kit/Scripts/player/PlayerCamera.cs"
+"Assets/Scene Teleportation Kit/Scripts/player/PlayerController.cs"
+"Assets/Scene Teleportation Kit/Scripts/player/PlayerManager.cs"
+"Assets/Scene Teleportation Kit/Scripts/player/PlayerMovement.cs"
+"Assets/Scene Teleportation Kit/Scripts/teleport/PortTrigger.cs"
+"Assets/Scene Teleportation Kit/Scripts/teleport/SpawnPoint.cs"
+"Assets/Scene Teleportation Kit/Scripts/teleport/Teleportable.cs"
+"Assets/Scene Teleportation Kit/Scripts/teleport/Teleporter.cs"
+"Assets/Script/Button/GameENDBUTTON.cs"
+"Assets/Script/Button/NextmissionButton.cs"
+"Assets/Script/Button/RestartButton.cs"
 "Assets/Script/Button/StartButton.cs"
 "Assets/Script/Enemy.cs"
+"Assets/Script/Key.cs"
 "Assets/Script/Player.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 "Assets/VR Beginner/Scripts/Effects/CauldronEffects.cs"
