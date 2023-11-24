@@ -7,8 +7,11 @@ using static UnityEditor.Progress;
 
 public class NextmissionButton : MonoBehaviour
 {
+
+    [SerializeField] private string LoadLevel;
+
     public void SceneChange()
     {
-        SceneManager.LoadScene("Stage 2");
+        SceneManager.LoadScene(LoadLevel);
     }
 }

@@ -46,7 +46,13 @@ public class Player : MonoBehaviour
             DeathUI.gameObject.SetActive(true);
         }
 
-        if(col.tag == "Clear")
+        if (col.tag == "CartEnemy")
+        {
+            Destroy(player);
+            DeathUI.gameObject.SetActive(true);
+        }
+
+        if (col.tag == "Clear")
         {
             Destroy(player);
             ClearUI.gameObject.SetActive(true);

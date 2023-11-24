@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Clear
   - Enemy AI
+  - CartEnemy
   layers:
   - Default
   - TransparentFX

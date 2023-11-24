@@ -398,6 +398,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
+"Assets/Crystal_Mine/Spline_Tool/Editor/Trail_MeshEditor.cs"
 "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs"
 "Assets/VR Beginner/Scripts/Editor/CCDatabaseEditor.cs"
 "Assets/VR Beginner/Scripts/Editor/SceneCreator.cs"
