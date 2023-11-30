@@ -114,7 +114,7 @@ MonoBehaviour:
   player: {fileID: 409658508620547628}
   DeathUI: {fileID: 0}
   ClearUI: {fileID: 0}
-  speed: 1.5
+  speed: 2
 --- !u!54 &409658508620547637
 Rigidbody:
   m_ObjectHideFlags: 0

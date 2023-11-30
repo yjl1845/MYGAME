@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 using static UnityEditor.Progress;
 
 public class Player : MonoBehaviour
@@ -13,6 +14,7 @@ public class Player : MonoBehaviour
     public float speed = 1f;
     private Rigidbody characterRigidbody;
 
+
     void Start()
     {
         characterRigidbody = GetComponent<Rigidbody>();
@@ -20,6 +22,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             characterRigidbody.AddForce(-speed, 0, 0);
@@ -47,6 +50,12 @@ public class Player : MonoBehaviour
         }
 
         if (col.tag == "CartEnemy")
+        {
+            Destroy(player);
+            DeathUI.gameObject.SetActive(true);
+        }
+
+        if (transform.position.z > 14)
         {
             Destroy(player);
             DeathUI.gameObject.SetActive(true);
